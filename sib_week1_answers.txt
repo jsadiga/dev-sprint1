@@ -1,3 +1,24 @@
 *** Cut and paste the for loop here ***
+{% for message in messages %}
+{{message}}
+					{% endfor %}
 
 *** What is the for loop doing? ***
+Ans:display results of the code? not sure how it works.
+
+
+
+**What is a route, and how do you specify one in Flask?
+ANS:routes redirect user to intended function/location based on URL. @app.route('')
+
+**What is the only route we’ve specified in our application?
+ANS:@app.route('/')
+
+**What is the method that gets called when we hit that route?
+ANS:hello_world()
+
+**If I wanted to add a route at “/world” that printed “Hello, ANS:World” on the screen, what would that code look like?
+@app.route('/world')
+
+**If I create a new application and import testingflask.py (a.k.a. I am not running it directly), will code under the ‘if __name__ == “__main__”: be executed? Why not?
+ANS:No,"__main" inidicates to be run from current module ,if we want to run from some other then it's name has to replace __main__
